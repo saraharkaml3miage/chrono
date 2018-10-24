@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Chronometer
+            android:id="@+id/chronometre_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textSize="40pt" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/start_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startClick"
+                android:text="Start"
+                android:textColor="#ff0077" />
+
+
+            <Button
+                android:id="@+id/stop_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stopClick"
+                android:text="Stop"
+                android:textColor="#ff0077" />
+
+            <Button
+                android:id="@+id/reset_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="resetClick"
+                android:text="Reset"
+                android:textColor="#ff0077" />
+
+
+
+
+        </LinearLayout>
+
+        <AnalogClock
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
